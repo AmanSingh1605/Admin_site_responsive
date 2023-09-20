@@ -1,0 +1,15 @@
+
+.Users{
+    height:100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    .title{
+        display: flex;
+        gap: 20px;
+        button{
+            padding:  2px 5px;
+        }
+
+    }
+}

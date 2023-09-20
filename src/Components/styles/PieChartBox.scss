@@ -1,0 +1,65 @@
+@import "../../styles/Variable.scss";
+@import "../../styles/responsive.scss";
+
+.PieChartBox {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+  .title {
+    font-weight: bold;
+    font-size: 30px;
+
+    @include md {
+      font-size: 24px;
+    }
+  }
+  .dataBoxes {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 2px;
+    font: 14px;
+    .dataBox {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      align-items: center;
+
+      @include md {
+        gap: 5px;
+      }
+
+      .textData {
+        display: flex;
+        gap: 5px;
+        align-items: center;
+
+        .icon {
+          width: 10px;
+          height: 10px;
+          border-radius: 50%;
+
+          @include md {
+            width: 7px;
+            height: 7px;
+          }
+        }
+        .name {
+          font-weight: semibold;
+
+          @include md {
+            font-size: 14px;
+          }
+        }
+      }
+      .count {
+        font-size: 14px;
+
+        @include md {
+          font-size: 10px;
+        }
+      }
+    }
+  }
+}

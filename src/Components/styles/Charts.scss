@@ -1,0 +1,69 @@
+@import "../../styles/Variable.scss";
+@import "../../styles/responsive.scss";
+
+.charts{
+    display: flex;
+    height:100%;
+    padding: 10px;
+    
+    @include md{
+        flex-direction: column;
+        gap: 20px
+    }
+    .data{
+        flex: 3;
+        display: flex;
+        justify-content: space-between;
+        flex-direction: column;
+        
+    @include md{
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap:20px
+    }
+       
+        .heading{
+            display: flex;
+            align-items: center;
+            gap:10px;
+            .icon{
+
+            }
+            .title{
+            }
+        }
+        .count{
+            font-weight: bold;
+            font-size: 30px;
+        }
+        .viewLink{
+            white-space: nowrap;
+
+            color: rgba(144, 81, 202, 0.425)
+        }
+    }
+    .chartSection{
+        flex: 2;
+        display:flex;
+        flex-direction: column;
+        justify-content: space-between;
+        gap:10px;
+        .viewChart{
+            width: 100%;
+            height:100%;
+        }
+        .chartText{
+            display: flex;
+            flex-direction: column;
+            align-items: end;
+            .percentage{
+                font-weight: bold;
+                font-size: 20px;
+            }
+            .text{
+                font-size: 12px;
+                color: $soft-color;
+            }
+        }
+    }
+}
